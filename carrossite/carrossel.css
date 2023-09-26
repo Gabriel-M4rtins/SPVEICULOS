@@ -1,0 +1,274 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.direction {
+    text-align: center;
+}
+
+.direction button {
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #ffffff45;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+
+.direction button:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.item {
+    width: 420px;
+    height: 400px;
+    -webkit-tap-highlight-color:transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 10px;
+    scroll-snap-align: start;
+    box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.item .avatar {
+    display: block;
+    margin: 20px auto 10px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item .content {
+    padding:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list-card-rodape {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.item-list {
+    margin: 30px 7px;
+}
+.item-list2, .item-list3{
+    margin: 30px 7px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.item .content table td:nth-child(2) {
+    text-align: right;
+}
+
+.titulo-card {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.texto-card {
+    font-size: 17px;
+}
+
+.valor-card {
+    font-size: 40px;
+    color: #e62b2b;
+}
+.item .nameGroup {
+    text-align: center;
+    border-bottom: none !important;
+}
+
+#list {
+    display: flex;
+    width: max-content;
+}
+
+#formList {
+    width: 1670px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 30px;
+    margin-left: 100px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+
+#formList::-webkit-scrollbar {
+    display:none;
+}
+
+@media screen and (min-width:1024px) {
+    #formList {
+        margin-left: 5vw;
+    }
+    .opcoes {
+        display: flex;
+        margin-left: 60%;
+    }
+    .item {
+        width:100%
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 35px;
+    }
+    .separator-one{
+        width: 20%;
+        height: 5px;
+    }
+    .separator-two {
+        width: 20%;
+        height: 5px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+    .opcoes {
+        display: flex;
+        margin-left: 32%;
+    }
+    #itens {
+        display: flex;
+        font-size: 18px;
+    }
+    .item {
+        width: 410px;
+        height: 450px;
+    }
+    
+    .item .avatar {
+        width: 350px;
+        height: 220px;
+    }
+    #itens {
+        font-size: 30px;
+    }
+    #formList {
+        margin-left: 20px;
+    }
+    .item {
+        width: calc(50vw - 20px);
+    }
+    .direction {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    .separator-one{
+        width: 40%;
+        height: 3px;
+    }
+    
+    .separator-two {
+        width: 40%;
+        height: 3px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+    .opcoes {
+        display: flex;
+        margin-left: 30%;
+    }
+    
+    #itens {
+        display: flex;
+        font-size: 18px;
+    }
+    .item .avatar {
+        margin: 15px auto 10px;
+        width: 395px;
+        height: 215px;
+    }
+    .item {
+        width: calc(100vw - 20px);
+    }
+    .direction {
+        display: none;
+    }
+}
+@media screen and (max-width:440px) {
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    .separator-one{
+        width: 40%;
+        height: 3px;
+    }
+    
+    .separator-two {
+        width: 40%;
+        height: 3px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+    .opcoes {
+        display: flex;
+        margin-left: 25%;
+    }
+    
+    #itens {
+        display: flex;
+        font-size: 15px;
+    }
+    .item .avatar {
+        width: 330px;
+        height: 200px;
+    }
+    #formList {
+        margin-left: 10px;
+    }
+    .item {
+        width: calc(100vw - 20px);
+        margin: 11px;
+    }
+    .direction {
+        display: none;
+    }    
+}

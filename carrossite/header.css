@@ -1,0 +1,43 @@
+header{
+    padding: 10px;    
+    font-size: 3vw;
+    font-weight: bolder;
+    color:white;
+    background:black;
+}
+ 
+
+.logo{
+   width: 17vmax;
+   margin-left: 15%;
+}
+
+a {
+    margin-right: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.container-imagem {
+    padding: 10px ;
+    width: 20%;
+    border-radius: 5%;
+}
+
+.opcoes {
+    display: flex;
+    margin-left: 60%;
+}
+
+#itens {
+    display: flex;
+    font-size: 30px;
+    margin-right: 20%;
+}
+
+#itens :hover{
+    color: rgb(235, 0, 0);
+}
