@@ -150,20 +150,76 @@ h4 {
     background-color: #880101;
 }
 
+
+@media screen and (min-width:1024px) {
+    
+}
+
+@media screen and (max-width:1023px){
+    
+}
+
+@media screen and (max-width:600px){
+    .card__descricao {
+        display: inline-block;
+    }
+    
+    .descricao {
+        width: 350px;
+        height: 350px;
+        margin: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);; 
+        background-color: transparent;  
+    }
+    
+    .financiamento, .avaliamos, .compramos {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .card__descricao {
+        display: inline-block;
+    }
+    
+    .descricao {
+        width: 350px;
+        height: 350px;
+        margin: 20px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);; 
+        background-color: transparent;  
+    }
+    
+    .financiamento, .avaliamos, .compramos {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+    }
+
+}
 /*mapa*/ 
 
 .mapa-section {
-    background-color: #cfcece;
+    background-color: #cfcfcf;
     width: 100%;
+    padding: 10px;
+    margin-bottom: 5em;
 }
 .mapa {
     display:flex;
     justify-content: left;
-    margin-left: 10em;
+    margin:2em 15em;
 }
 
 .img-banner {
-    width: 70%;
+    width: 60%;
     height: 40%;
-    padding: 2em 0em 2em 2em;
+    padding: 5em 0em 2em 2em;
 }

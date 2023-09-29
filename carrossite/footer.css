@@ -1,5 +1,9 @@
 footer {
     background-image:url(/img/fundo\ rodape.png);
-    padding: 150px;
+    padding: 70px;
     color: white;
+}
+
+.img-rodape {
+    width: 200px;
 }
