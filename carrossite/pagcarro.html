@@ -7,21 +7,42 @@
     <title>SP Veículos</title>
     <link rel="shortcut icon" href="/img/LOGO.png" alt="Logo da loja de carros SP Veículos">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="sliderpag.js" defer></script>
     
 
-    <header>
-      <div class="container">
-          <a href="index.html"><H1><img class="logo" src="img/LOGO-SP2.png" alt="Logo da marca da loja de carros"></H1></a>
-            <ul class="opcoes">
-              <li class="itens"><a href="index.html">Home</a></li>
-              <li class="itens"><a href="">Contato</a></li>
-            </ul>
-      </div>
-    </header>
-
     <body>
+
+      <header>
+        <div class="navbar">
+          <div class="logo"><a href="#"><img src="/img/LOGO-SP2.png" id="image-header"></a></div>
+          <ul class="links">
+            <li><a href="hero">Home</a></li>
+            <li><a href="contact">Contato</a></li>
+            <li><a href="veiculuos">Veículos</a></li>
+          </ul>
+          <a href="#" class="action-btn">Get started</a>
+          <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="dropdown-menu open">
+            <li><a href="hero">Home</a></li>
+            <li><a href="contact">Contato</a></li>
+            <li><a href="veiculuos">Veículos</a></li>
+            <li><a href="#" class="action-btn">Get started</a></li>
+        </div>
+      </header>
+
+      <button class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=19992780810&text=Olá%2C%20gostaria de saber mais sobre seus veículos!" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </button>
+
+
       <div class="topo-pagcarro">
         <div class="topo-img">
          <div class="card-overlay">
@@ -32,47 +53,130 @@
         </div>
       </div>
 
-      <div class="slider">
+      <div class="content-pag">
         <div class="slides">
-          <!--radio buttons-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons-->
+          <input type="radio" name="slide" id="slide1" checked>
+          <input type="radio" name="slide" id="slide2">
+          <input type="radio" name="slide" id="slide3">
+          <input type="radio" name="slide" id="slide4">
+          <input type="radio" name="slide" id="slide5">
 
-          <!--slides images-->
-          <div class="slide-first">
-            <img src="/img/bmw-hrv-grande.png" alt="image 1">
+          <div class="slide s1">
+            <img src="/img/bmw-hrv-grande.png" alt="carro BMW">
           </div>
-          <div class="slide-first">
-            <img src="/img/cruze-grande.jpg" alt="image 2">
+          <div class="slide">
+            <img src="/img/bmw-hrv-grande.png" alt="carro BMW">
           </div>
-          <div class="slide-first">
-            <img src="/img/bmw-hrv-grande.png" alt="image 3">
+          <div class="slide">
+            <img src="/img/bmw-hrv-grande.png" alt="carro BMW">
           </div>
-          <div class="slide-first">
-            <img src="/img/cruze-grande.jpg" alt="image 4">
+          <div class="slide">
+            <img src="/img/bmw-hrv-grande.png" alt="carro BMW">
           </div>
-          <!--fim slides images-->
-
-          <!--navegation auto-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
+          <div class="slide">
+            <img src="/img/bmw-hrv-grande.png" alt="carro BMW">
           </div>
         </div>
 
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+        <div class="navigation">
+          <label class="navi" for="slide1"></label>
+          <label class="navi" for="slide2"></label>
+          <label class="navi" for="slide3"></label>
+          <label class="navi" for="slide4"></label>
+          <label class="navi" for="slide5"></label>
         </div>
       </div>
 
+
+      <section class="carro-info">
+                <div class="carro__descricao">
+                    <div class="info">
+                        <h3 id="info-titulo">Especificações</h3>
+                        <p class="info__texto">Automático</p>
+                        <p class="info__texto">Gasolina</p>
+                        <p class="info__texto">Ano 2022</p>
+                        <p class="info__texto">Carroceria: Hatch</p>
+                        <p class="info__texto">Cor: Cinza</p>
+                        <p class="info__texto">Kilometragem: 10.000km</p>
+                        <h4 id="valor-carro">R$49.990</h4>
+                    </div>
+                </div>
+        </section>
+
+
+        <script src="/main.js"></script>
     </body>
+
+    <footer>
+      <div id="footer-content">
+        <div id="footer-contacts">
+              <img src="/img/LOGO.png" class="logo-footer">
+              <div id="footer-social-media">
+                <a href="#" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+              </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <h3>Endereço</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Cidade: Santa Barbara d Oeste</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Rua Daniel Manzato, 155</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bairro Jardim Dona Regina</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3>Horários</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Segunda a Sexta: 8h00 as 17h00</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Sábados e Feriados: 8h00 as 14h00</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Domingos: Fechados</a>
+          </li>
+        </ul>
+
+
+        <div id="footer-subscribe">
+          <h3>Não sei o que posso colocar me ajudem</h3>
+
+          <p>enter your email to get notified about our news solutions</p>
+
+          <div id="input-group">
+            <input type="email" id="email">
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="footer-copyright">
+        &#169
+        2023 todos direitos reservados Desenvolvido e criado por Pequenos Empresários  
+      </div>
+    </footer>
 
 </html>

@@ -1,43 +1,128 @@
-header{
-    padding: 10px;    
-    font-size: 3vw;
-    font-weight: bolder;
-    color:white;
-    background:black;
-}
- 
-
-.logo{
-   width: 17vmax;
-   margin-left: 15%;
+li {
+    list-style: none;
 }
 
 a {
-    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
-.container {
+
+a:hover {
+    color: rgb(136, 36, 36);
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-image: url(/img/fundo\ rodape.png);
+}
+
+#image-header {
+    width: 10rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: start;
-    
-}
-.container-imagem {
-    padding: 10px ;
-    width: 20%;
-    border-radius: 5%;
+    justify-content: space-between;
 }
 
-.opcoes {
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
     display: flex;
-    margin-left: 60%;
+    gap: 2rem;
 }
 
-#itens {
+.navbar .toggle-btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+/*dropdown menu*/
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: heigth 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
     display: flex;
-    font-size: 30px;
-    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
 }
 
-#itens :hover{
-    color: rgb(235, 0, 0);
+.dropdown-menu .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*responsivo*/
+
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
 }

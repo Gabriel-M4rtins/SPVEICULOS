@@ -43,16 +43,16 @@ h3 {
 /*botão whatsapp*/
 
 .btn-whatsapp {
-    position: absolute;
+    position: fixed;
     outline: none;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 50px;
     border-radius: 50%;
     height: 65px;
     width: 65px;
     background-color:#34af23;
     color: #dddddd;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     border: 1px solid #f1f1f1;
 
     animation: pulsar 0.8s ease-out 1s infinite alternate none running;
@@ -105,6 +105,7 @@ h4 {
 
 .descricao:hover {
     transform: scale(1.1);
+    transition: 0.5s;
 }
 .descricao {
     width: 400px;
